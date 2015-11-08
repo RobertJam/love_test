@@ -45,7 +45,7 @@ function touch_rock(rockIndex,nrocks)
    rockY = rock.y
    rockVx = rock.vx
    rockVy = rock.vy
-   if rock.size > minRockSize then
+   if rock.size > 0.4 then
       for i=1,nrocks do
          newRock = create_rock()
          newRock.size = rock.size/2
